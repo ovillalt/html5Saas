@@ -14,7 +14,7 @@ p {
   color: #494949;
 }
 
-.tSlow, ul li a:hover:after, ul li a:after, ul li a:before, ul li a, ul, nav .logo img, nav, a {
+.tSlow, ul li a:hover:after, ul li a:after, ul li a:before, ul li a, ul .link-active a:after, ul, nav .logo img, nav, a {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -45,6 +45,13 @@ ul {
   padding: 0px;
   text-align: right;
 }
+ul .link-active a {
+  color: #060a0f !important;
+}
+ul .link-active a:after {
+  width: 100%;
+  background-color: #060a0f;
+}
 ul li {
   display: inline-block;
   padding: 0px 10px;
@@ -59,7 +66,7 @@ ul li a:before {
   content: "";
   position: absolute;
   width: 100%;
-  background-color: red;
+  background-color: transparent;
   height: 1px;
 }
 ul li a:after {

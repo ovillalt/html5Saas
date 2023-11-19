@@ -53,7 +53,13 @@ ul
     padding: 0px
     text-align: right
     @extend .tSlow
-    //link-active:
+    .link-active
+        a
+            color: $base !important
+            &:after
+                width: 100%
+                background-color: $base
+                @extend .tSlow        
     li
         display: inline-block
         padding: 0px 10px
@@ -67,7 +73,7 @@ ul
                 content: ''
                 position: absolute
                 width: 100%
-                background-color: red
+                background-color: transparent
                 height: 1px
                 @extend .tSlow
             &:after
