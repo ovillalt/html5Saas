@@ -1,0 +1,47 @@
+// BlackParadox
+// Estilos 2023
+// Version 0.1
+
+// Variables de colores
+
+$base:#060a0f
+$sec:#494949
+$outline:#ff6500
+$text:transparentize($sec, .5)
+
+
+// Estilos generales
+
+a
+    margin:0px
+    padding:0px
+    @extend .tSlow
+    &:hover
+        color:$outline
+h1,h2,h3,h4,h5,h6
+    color:$base
+p
+    color:$sec
+.tSlow
+    -webkit-transition: all .5s ease-in-out
+    -o-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+.pad_100
+    padding: 100px 0px
+.center
+    text-aling: center
+    margin: 0px auto
+
+
+// Estilos de los inputs
+
+// Estilos de la barra de navegación
+nav
+    width: 100%
+    background-color: lighten(red,40)
+    padding: 10px 0px
+    position: fixed
+    border-bottom: 1px solid transparent
+    z-index: 100
+    @extend .tSlow
+
