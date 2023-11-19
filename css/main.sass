@@ -29,7 +29,7 @@ p
 .pad_100
     padding: 100px 0px
 .center
-    text-aling: center
+    text-align: center
     margin: 0px auto
 
 
@@ -44,4 +44,34 @@ nav
     border-bottom: 1px solid transparent
     z-index: 100
     @extend .tSlow
+    .logo
+        img
+            width: 100%
+            @extend .tSlow
+ul
+    margin: 0px
+    padding: 0px
+    text-align: right
+    @extend .tSlow
+    //link-active:
+    li
+        display: inline-block
+        padding: 0px 10px
+        a
+            position: relative
+            text-decoration: none
+            font-size: 16px
+            color: $text
+            @extend .tSlow
+            &:before
+                content: ' '
+                position: absolute
+                top: 30px
+                width: 100px
+                background-color: red
+                height: 1px
+                @extend .tSlow
+
+
+
 

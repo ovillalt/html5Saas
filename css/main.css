@@ -14,7 +14,7 @@ p {
   color: #494949;
 }
 
-.tSlow, nav, a {
+.tSlow, ul li a:before, ul li a, ul, nav .logo img, nav, a {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -24,7 +24,7 @@ p {
 }
 
 .center {
-  text-aling: center;
+  text-align: center;
   margin: 0px auto;
 }
 
@@ -35,4 +35,31 @@ nav {
   position: fixed;
   border-bottom: 1px solid transparent;
   z-index: 100;
+}
+nav .logo img {
+  width: 100%;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(73, 73, 73, 0.5);
+}
+ul li a:before {
+  content: " ";
+  position: absolute;
+  top: 30px;
+  width: 100px;
+  background-color: red;
+  height: 1px;
 }
