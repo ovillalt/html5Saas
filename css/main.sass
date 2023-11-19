@@ -64,13 +64,32 @@ ul
             color: $text
             @extend .tSlow
             &:before
-                content: ' '
+                content: ''
                 position: absolute
-                top: 30px
-                width: 100px
+                width: 100%
                 background-color: red
                 height: 1px
                 @extend .tSlow
+            &:after
+                content: ''
+                position: absolute
+                top: 100%
+                left: 0px
+                width: 0%
+                background-color: red
+                height: 1px
+                @extend .tSlow
+            &:hover
+                //background-color: purple
+                text-decoration: none
+                color: $base
+                &:before
+                    width: 0%
+                    background-color: $base
+                &:after
+                    width: 100%
+                    background-color: $base
+                    @extend .tSlow
 
 
 
